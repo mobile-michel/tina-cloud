@@ -24,10 +24,10 @@ jobs:
           TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
           TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
         run: |
+          npm install
           npx tinacms build
       - name: Install dependencies & build
         run: |
-          npm install
           npm run build-gp
       - uses: actions/upload-pages-artifact@v3
 
