@@ -21,8 +21,8 @@ jobs:
       - uses: actions/setup-node@v4
       - name: Build TinaCMS
         env:
-          TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
-          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          TINA_PUBLIC_CLIENT_ID: '1421083b-6294-4036-8c10-388b460bb401'
+          TINA_TOKEN: 'f0ac9b3b8a83a26cf68fd79c13603c0ffb2ab623'
         run: |
           npm ci
           npx tinacms build
